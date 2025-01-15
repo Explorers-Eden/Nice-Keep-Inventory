@@ -1,0 +1,44 @@
+execute unless items entity @s weapon.offhand #eden:non_droppable_items run item replace entity @s weapon.offhand with air
+
+execute unless items entity @s hotbar.0 #eden:non_droppable_items run item replace entity @s hotbar.0 with air
+execute unless items entity @s hotbar.1 #eden:non_droppable_items run item replace entity @s hotbar.1 with air
+execute unless items entity @s hotbar.2 #eden:non_droppable_items run item replace entity @s hotbar.2 with air
+execute unless items entity @s hotbar.3 #eden:non_droppable_items run item replace entity @s hotbar.3 with air
+execute unless items entity @s hotbar.4 #eden:non_droppable_items run item replace entity @s hotbar.4 with air
+execute unless items entity @s hotbar.5 #eden:non_droppable_items run item replace entity @s hotbar.5 with air
+execute unless items entity @s hotbar.6 #eden:non_droppable_items run item replace entity @s hotbar.6 with air
+execute unless items entity @s hotbar.7 #eden:non_droppable_items run item replace entity @s hotbar.7 with air
+execute unless items entity @s hotbar.8 #eden:non_droppable_items run item replace entity @s hotbar.8 with air
+
+execute unless items entity @s inventory.0 #eden:non_droppable_items run item replace entity @s inventory.0 with air
+execute unless items entity @s inventory.1 #eden:non_droppable_items run item replace entity @s inventory.1 with air
+execute unless items entity @s inventory.2 #eden:non_droppable_items run item replace entity @s inventory.2 with air
+execute unless items entity @s inventory.3 #eden:non_droppable_items run item replace entity @s inventory.3 with air
+execute unless items entity @s inventory.4 #eden:non_droppable_items run item replace entity @s inventory.4 with air
+execute unless items entity @s inventory.5 #eden:non_droppable_items run item replace entity @s inventory.5 with air
+execute unless items entity @s inventory.6 #eden:non_droppable_items run item replace entity @s inventory.6 with air
+execute unless items entity @s inventory.7 #eden:non_droppable_items run item replace entity @s inventory.7 with air
+execute unless items entity @s inventory.8 #eden:non_droppable_items run item replace entity @s inventory.8 with air
+execute unless items entity @s inventory.9 #eden:non_droppable_items run item replace entity @s inventory.9 with air
+execute unless items entity @s inventory.10 #eden:non_droppable_items run item replace entity @s inventory.10 with air
+execute unless items entity @s inventory.11 #eden:non_droppable_items run item replace entity @s inventory.11 with air
+execute unless items entity @s inventory.12 #eden:non_droppable_items run item replace entity @s inventory.12 with air
+execute unless items entity @s inventory.13 #eden:non_droppable_items run item replace entity @s inventory.13 with air
+execute unless items entity @s inventory.14 #eden:non_droppable_items run item replace entity @s inventory.14 with air
+execute unless items entity @s inventory.15 #eden:non_droppable_items run item replace entity @s inventory.15 with air
+execute unless items entity @s inventory.16 #eden:non_droppable_items run item replace entity @s inventory.16 with air
+execute unless items entity @s inventory.17 #eden:non_droppable_items run item replace entity @s inventory.17 with air
+execute unless items entity @s inventory.18 #eden:non_droppable_items run item replace entity @s inventory.18 with air
+execute unless items entity @s inventory.19 #eden:non_droppable_items run item replace entity @s inventory.19 with air
+execute unless items entity @s inventory.20 #eden:non_droppable_items run item replace entity @s inventory.20 with air
+execute unless items entity @s inventory.21 #eden:non_droppable_items run item replace entity @s inventory.21 with air
+execute unless items entity @s inventory.22 #eden:non_droppable_items run item replace entity @s inventory.22 with air
+execute unless items entity @s inventory.23 #eden:non_droppable_items run item replace entity @s inventory.23 with air
+execute unless items entity @s inventory.24 #eden:non_droppable_items run item replace entity @s inventory.24 with air
+execute unless items entity @s inventory.25 #eden:non_droppable_items run item replace entity @s inventory.25 with air
+execute unless items entity @s inventory.26 #eden:non_droppable_items run item replace entity @s inventory.26 with air
+
+execute unless items entity @s armor.feet #eden:non_droppable_items run item replace entity @s armor.feet with air
+execute unless items entity @s armor.legs #eden:non_droppable_items run item replace entity @s armor.legs with air
+execute unless items entity @s armor.chest #eden:non_droppable_items run item replace entity @s armor.chest with air
+execute unless items entity @s armor.head #eden:non_droppable_items run item replace entity @s armor.head with air
