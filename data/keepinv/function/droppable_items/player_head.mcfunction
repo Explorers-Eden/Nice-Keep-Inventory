@@ -1,1 +1,0 @@
-$execute if predicate eden:percentages/15 in $(Dimension) run loot spawn $(Pos0) $(Pos1).9 $(Pos2) loot eden:gameplay/player_head
