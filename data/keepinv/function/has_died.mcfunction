@@ -1,20 +1,18 @@
+advancement revoke @s only keepinv:has_died
 data remove storage eden:temp keepinv
-clear @s *[enchantments~[{enchantments: "minecraft:vanishing_curse"}]]
+
+clear @s *[minecraft:enchantments~[{enchantments: "minecraft:vanishing_curse"}]]
 
 function keepinv:droppable_items/store
 function keepinv:droppable_items/clear
 
-data modify storage eden:temp keepinv.deathloc.Pos0 set from entity @s LastDeathLocation.pos[0]
-data modify storage eden:temp keepinv.deathloc.Pos1 set from entity @s LastDeathLocation.pos[1]
-data modify storage eden:temp keepinv.deathloc.Pos2 set from entity @s LastDeathLocation.pos[2]
-data modify storage eden:temp keepinv.deathloc.Dimension set from entity @s LastDeathLocation.dimension
-data modify storage eden:temp keepinv.deathloc.UUID set from entity @s UUID
 
-# To-Do: add enchantment for locking item pickup to player (and maaaaybbeeeee also one for shulker boxes so they dont drop)
-# Also add DEATHLINK which gives off creaking particles leading to death loc
-# Don't forget Exp loss functions
+data modify storage eden:temp keepinv.drop.UUID set from entity @s UUID
+data modify storage eden:temp keepinv.drop.item set from storage eden:temp keepinv.dropped_items[0]
 
-execute if data storage eden:temp keepinv.dropped_items[0] run function keepinv:droppable_items/drop with storage eden:temp keepinv.deathloc
-function keepinv:droppable_items/player_head with storage eden:temp keepinv.deathloc
+execute if predicate eden:percentages/15 run loot spawn ~ ~ ~ loot eden:gameplay/player_head
+function keepinv:exp_lost/start
 
-scoreboard players set @s keepinv.has_died 0
+execute if data storage eden:temp keepinv.dropped_items[0] if items entity @s armor.chest #minecraft:chest_armor[minecraft:enchantments~[{enchantments: "keepinv:deathlock"}]] run return run function keepinv:droppable_items/drop_w_deathlock with storage eden:temp keepinv.drop
+execute if data storage eden:temp keepinv.dropped_items[0] if items entity @s armor.chest #minecraft:chest_armor[minecraft:enchantments~[{enchantments: "keepinv:gravehold"}]] run return run function keepinv:droppable_items/drop_w_gravehold with storage eden:temp keepinv.drop
+execute if data storage eden:temp keepinv.dropped_items[0] run return run function keepinv:droppable_items/drop with storage eden:temp keepinv.drop
