@@ -7,6 +7,10 @@
       {
         "id": "keepinv:gravehold",
         "required": false
+      },
+      {
+        "id": "keepinv:safekeep",
+        "required": false
       }
     ]
   }

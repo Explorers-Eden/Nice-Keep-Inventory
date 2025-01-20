@@ -1,0 +1,29 @@
+{
+    "values": [
+      {
+        "id": "minecraft:mending",
+        "required": false
+      },
+      {
+        "id": "minecraft:vanishing_curse",
+        "required": false
+      },
+      {
+        "id": "enchantencore:undying_curse",
+        "required": false
+      },
+      {
+        "id": "enchantencore:handyman",
+        "required": false
+      },
+      {
+        "id": "enchantencore:midas_touch",
+        "required": false
+      },
+      {
+        "id": "enchantencore:sacrifice",
+        "required": false
+      }
+    ]
+  }
+  

@@ -1,0 +1,4 @@
+execute if items entity @s armor.head #minecraft:enchantable/armor[minecraft:enchantments~[{enchantments: "keepinv:safekeep"}]] run item modify entity @s armor.head {"function":"minecraft:set_damage","damage":-0.33,"add":true}
+execute if items entity @s armor.chest #minecraft:enchantable/armor[minecraft:enchantments~[{enchantments: "keepinv:safekeep"}]] run item modify entity @s armor.chest {"function":"minecraft:set_damage","damage":-0.33,"add":true}
+execute if items entity @s armor.legs #minecraft:enchantable/armor[minecraft:enchantments~[{enchantments: "keepinv:safekeep"}]] run item modify entity @s armor.legs {"function":"minecraft:set_damage","damage":-0.33,"add":true}
+execute if items entity @s armor.feet #minecraft:enchantable/armor[minecraft:enchantments~[{enchantments: "keepinv:safekeep"}]] run item modify entity @s armor.feet {"function":"minecraft:set_damage","damage":-0.33,"add":true}

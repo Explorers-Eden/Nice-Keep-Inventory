@@ -6,13 +6,13 @@
   "exclusive_set": "#eden:exclusive_set/death",
   "supported_items": "#minecraft:chest_armor",
   "weight": 1,
-  "max_level": 1,
-  "min_cost": {
-    "base": 31,
+  "max_cost": {
+    "base": 65,
     "per_level_above_first": 0
   },
-  "max_cost": {
-    "base": 41,
+  "max_level": 1,
+  "min_cost": {
+    "base": 15,
     "per_level_above_first": 0
   },
   "anvil_cost": 4,
