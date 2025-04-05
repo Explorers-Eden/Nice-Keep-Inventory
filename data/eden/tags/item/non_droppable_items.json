@@ -80,6 +80,8 @@
       { "id": "minecraft:carrot_on_a_stick","required": false},
       { "id": "minecraft:warped_fungus_on_a_stick","required": false},
       { "id": "minecraft:command_block","required": false},
+      { "id": "minecraft:test_block","required": false},
+      { "id": "minecraft:test_instance_block","required": false},
       { "id": "minecraft:command_block_minecart","required": false},
       { "id": "minecraft:chain_command_block","required": false},
       { "id": "minecraft:repeating_command_block","required": false},
