@@ -1,4 +1,4 @@
-execute unless items entity @s weapon.offhand #eden:non_droppable_items run data modify storage eden:temp keepinv.dropped_items append from entity @s Inventory[{Slot:-106b}]
+execute unless items entity @s weapon.offhand #eden:non_droppable_items run data modify storage eden:temp keepinv.dropped_items append from entity @s equipment.offhand
 
 execute unless items entity @s hotbar.0 #eden:non_droppable_items run data modify storage eden:temp keepinv.dropped_items append from entity @s Inventory[{Slot:0b}]
 execute unless items entity @s hotbar.1 #eden:non_droppable_items run data modify storage eden:temp keepinv.dropped_items append from entity @s Inventory[{Slot:1b}]
@@ -38,7 +38,7 @@ execute unless items entity @s inventory.24 #eden:non_droppable_items run data m
 execute unless items entity @s inventory.25 #eden:non_droppable_items run data modify storage eden:temp keepinv.dropped_items append from entity @s Inventory[{Slot:34b}]
 execute unless items entity @s inventory.26 #eden:non_droppable_items run data modify storage eden:temp keepinv.dropped_items append from entity @s Inventory[{Slot:35b}]
 
-execute unless items entity @s armor.feet #eden:non_droppable_items run data modify storage eden:temp keepinv.dropped_items append from entity @s Inventory[{Slot:100b}]
-execute unless items entity @s armor.legs #eden:non_droppable_items run data modify storage eden:temp keepinv.dropped_items append from entity @s Inventory[{Slot:101b}]
-execute unless items entity @s armor.chest #eden:non_droppable_items run data modify storage eden:temp keepinv.dropped_items append from entity @s Inventory[{Slot:102b}]
-execute unless items entity @s armor.head #eden:non_droppable_items run data modify storage eden:temp keepinv.dropped_items append from entity @s Inventory[{Slot:103b}]
+execute unless items entity @s armor.feet #eden:non_droppable_items run data modify storage eden:temp keepinv.dropped_items append from entity @s equipment.feet
+execute unless items entity @s armor.legs #eden:non_droppable_items run data modify storage eden:temp keepinv.dropped_items append from entity @s equipment.legs
+execute unless items entity @s armor.chest #eden:non_droppable_items run data modify storage eden:temp keepinv.dropped_items append from entity @s equipment.chest
+execute unless items entity @s armor.head #eden:non_droppable_items run data modify storage eden:temp keepinv.dropped_items append from entity @s equipment.head
