@@ -134,6 +134,7 @@
       { "id": "polydecorations:canvas","required": false},
       { "id": "polyfactory:creative_container","required": false},
       { "id": "polyfactory:creative_motor","required": false},
-      { "id": "polyfactory:creative_drain","required": false}
+      { "id": "polyfactory:creative_drain","required": false},
+      { "id": "minecraft:happy_ghast_spawn_egg","required": false}
     ]
   }
