@@ -1,11 +1,8 @@
 {
     "enchantment.keepinv.safekeep": "Safekeep",
-    "enchantment.keepinv.safekeep.desc": "Keep all items on death at the cost of 33% item durability",
     "enchantment_lore.keepinv:safekeep.description": "§nSafekeep§r\n\nMax Level: I\n\nCompatible with: Armor\n\nKeep all items on death at the cost of 33% item durability",
     "enchantment.keepinv.deathlock": "Deathlock",
-    "enchantment.keepinv.deathlock.desc": "Items dropped on death can only be picked up by the player who dropped them",
     "enchantment_lore.keepinv:deathlock.description": "§nDeathlock§r\n\nMax Level: I\n\nCompatible with: Chestplates\n\nItems dropped on death can only be picked up by the player who dropped them",
     "enchantment.keepinv.gravehold": "Gravehold",
-    "enchantment.keepinv.gravehold.desc": "Items dropped on death will stay there for 10 minutes before they disappear",
     "enchantment_lore.keepinv:gravehold.description": "§nGravehold§r\n\nMax Level: I\n\nCompatible with: Chestplates\n\nItems dropped on death will stay there for 10 minutes before they disappear"
 }
