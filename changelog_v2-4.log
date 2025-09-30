@@ -1,5 +1,7 @@
 ## Changes:
 - removed support for enchantment description mod due to it not being updated to current versions
+- added Copper Golem Spawn Egg, Copper Tools, Copper Armor, Copper Horse Armor to list of non droppable items
+- cleaned up file structure
 
 
 ## Fixes:

@@ -3,7 +3,7 @@
     "translate": "enchantment.keepinv.gravehold",
     "fallback": "Gravehold"
   },
-  "exclusive_set": "#eden:exclusive_set/death",
+  "exclusive_set": "#keepinv:exclusive_set/death",
   "supported_items": "#minecraft:chest_armor",
   "weight": 1,
   "max_cost": {

@@ -2,7 +2,7 @@ advancement revoke @s only keepinv:has_died
 
 clear @s *[minecraft:enchantments~[{enchantments: "minecraft:vanishing_curse"}]]
 
-execute if predicate eden:percentages/30 run loot spawn ~ ~ ~ loot eden:gameplay/player_head
+execute if predicate keepinv:percentages/30 run loot spawn ~ ~ ~ loot keepinv:gameplay/player_head
 function keepinv:exp_lost/start
 
 execute if items entity @s armor.* #minecraft:enchantable/armor[minecraft:enchantments~[{enchantments: "keepinv:safekeep"}]] run return run function keepinv:safekeep

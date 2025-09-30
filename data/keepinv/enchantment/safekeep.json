@@ -3,7 +3,7 @@
     "translate": "enchantment.keepinv.safekeep",
     "fallback": "Safekeep"
   },
-  "exclusive_set": "#eden:exclusive_set/safekeep",
+  "exclusive_set": "#keepinv:exclusive_set/safekeep",
   "supported_items": "#minecraft:enchantable/armor",
   "weight": 1,
   "max_cost": {
