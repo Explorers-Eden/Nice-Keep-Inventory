@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "keepinv:has_died"
+    "function": "keepinv:has_died/init"
   }
 }

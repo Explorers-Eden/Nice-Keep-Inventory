@@ -1,0 +1,8 @@
+{
+    "enchantment.keepinv.safekeep": "Cofre",
+    "enchantment_lore.keepinv:safekeep.description": "§nCofre§r\n\nNível Máximo: 1\n\nCompatível com: Armadura\n\nMantenha todos os itens após a morte, ao custo de 33% de durabilidade do item.",
+    "enchantment.keepinv.deathlock": "Cadeado da Morte",
+    "enchantment_lore.keepinv:deathlock.description": "§nCadeado da Morte§r\n\nNível Máximo: 1\n\nCompatível: Peitoral\n\nItens deixados ao morrer só podem ser apanhados pelo jogador que os deixou.",
+    "enchantment.keepinv.gravehold": "Aperto do Túmulo",
+    "enchantment_lore.keepinv:gravehold.description": "§Aperto do Túmulo§r\n\nNível Máximo: 1\n\nCompatível com: Peitoral\n\nItens deixados ao morrer permanecerão no local por 10 minutos antes de desaparecem."
+}

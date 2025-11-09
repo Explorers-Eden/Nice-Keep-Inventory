@@ -1,0 +1,8 @@
+{
+    "enchantment.keepinv.safekeep": "Збереження",
+    "enchantment_lore.keepinv:safekeep.description": "§nЗбереження§r\n\nМаксимальний рівень: I\n\nСумісність: Броня\n\nПісля смерті зберігає всі предмети, але зменшує міцність кожного на 33%",
+    "enchantment.keepinv.deathlock": "Блокування смерті",
+    "enchantment_lore.keepinv:deathlock.description": "§nБлокування смерті§r\n\nМаксимальний рівень: I\n\nСумісність: Нагрудник\n\nПредмети, що випали після смерті, може підняти лише гравець, який їх загубив",
+    "enchantment.keepinv.gravehold": "Утримання могили",
+    "enchantment_lore.keepinv:gravehold.description": "§nУтримання могили§r\n\nМаксимальний рівень: I\n\nСумісність: Нагрудник\n\nПредмети, що випали після смерті, залишаються на місці 10 хвилин, перш ніж зникнуть"
+}

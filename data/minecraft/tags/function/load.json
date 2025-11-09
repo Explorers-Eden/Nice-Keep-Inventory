@@ -1,5 +1,6 @@
 {
     "values":[
-      "keepinv:load"
+      "keepinv:load",
+      "keepinv:grave/remove/int"
     ]
   }

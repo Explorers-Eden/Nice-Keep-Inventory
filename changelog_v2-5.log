@@ -1,0 +1,24 @@
+## Changes:
+- added ukranian, portugese (brasil) and vietnamese translations
+- added Graves:
+    - will be placed at the position the player died
+    - will only be placed when the player has droppable items
+    - If a player dies in Lava or most solid blocks the Grave will be placed at the first possible block above the position
+    - If a player dies in the air the Grave will be placed on the ground below
+    - If a player dies on top of another Grave the Grave will be moved 1 block to a random direction
+    - left/right-clicking the Grave drops the items it is holding
+    - despawn after 5 minutes (can be configured)
+    - Graves created by players wearing a Chestplate enchanted with Deathlock can only be opened by the player
+    - Graves created by players wearing a Chestplate enchanted with Gravehold last double the time
+- added Config Menu:
+    - can be opened with `/function keep_inventory`
+    - option to en-/disable Graves
+    - option to change the duration Graves last before they despawn
+    - option to change the appearance of Graves (Random, Player Head, Tombstone, Chest, Bundle, Skull, Candle)
+    - option to change the tag list used for non-droppable items
+    - option to en-/disable Player Head drops on death
+    - option to change chance of Player Head dropping on death
+    - Option to en-/disable Experience Loss on death
+    - Option to change amount of Experience lost on death
+
+## Fixes:

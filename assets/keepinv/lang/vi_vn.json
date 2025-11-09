@@ -1,0 +1,8 @@
+{
+    "enchantment.keepinv.safekeep": "Giữ an toàn",
+    "enchantment_lore.keepinv:safekeep.description": "§Giữ an toàn§r\n\nCấp độ tối đa: I\n\nTương thích: Các loại giáp\n\nGiữ lại các đồ khi chết và giảm 33% độ bền các item",
+    "enchantment.keepinv.deathlock": "Khóa tử thần",
+    "enchantment_lore.keepinv:deathlock.description": "§Khóa tử thần§r\n\nCấp độ tối đa: I\n\nTương thích: Giáp ngực\n\nVật phẩm rơi ra khi chết chỉ có thể được nhặt bởi người làm rơi nó",
+    "enchantment.keepinv.gravehold": "Mộ",
+    "enchantment_lore.keepinv:gravehold.description": "§nMộ§r\n\nCấp độ tối đa: I\n\nTương thích: Giáp ngực\n\nVật phẩm rơi ra khi chết sẽ tồn tại trong 10 phút trước khi chúng biến mất"
+}
