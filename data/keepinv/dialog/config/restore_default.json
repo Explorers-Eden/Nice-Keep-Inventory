@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:confirmation",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "menu.keepinv.restore.description"
+      },
+      "width": 512
+    }
+  ],
+  "can_close_with_escape": true,
+  "external_title": {
+    "translate": "menu.keepinv.restore.title"
+  },
+  "title": {
+    "translate": "menu.keepinv.config.main.title"
+  },
+  "yes": {
+    "label": {
+      "translate": "option.keepinv.confirm"
+    },
+    "action": {
+      "type": "run_command",
+      "command": "function keepinv:default_values"
+    }
+  },
+  "no": {
+    "label": {
+      "translate": "option.keepinv.back"
+    },
+    "action": {
+      "type": "show_dialog",
+      "dialog": "keepinv:config/main"
+    }
+  }
+}

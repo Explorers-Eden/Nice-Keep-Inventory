@@ -1,0 +1,96 @@
+{
+  "type": "minecraft:confirmation",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "translate": "menu.keepinv.config.restore_inv.desc"
+    },
+    "width": 512
+  },
+  "inputs": [
+    {
+      "type": "minecraft:single_option",
+      "key": "inventory_type",
+      "width": 256,
+      "label": {
+        "translate": "option.keepinv.restore_inv.inventory_type"
+      },
+      "options": [
+        {
+          "id": "filtered",
+          "display": {
+            "translate": "option.keepinv.restore_inv.inventory_type.filtered"
+          },
+          "initial": true
+        },
+        {
+          "id": "raw",
+          "display": {
+            "translate": "option.keepinv.restore_inv.inventory_type.raw"
+          },
+          "initial": false
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "item_type",
+      "width": 256,
+      "label": {
+        "translate": "option.keepinv.restore_inv.item_type"
+      },
+      "options": [
+        {
+          "id": "ground",
+          "display": {
+            "translate": "option.keepinv.restore_inv.item_type.on_ground"
+          },
+          "initial": false
+        },
+        {
+          "id": "shulker",
+          "display": {
+            "translate": "option.keepinv.restore_inv.item_type.shulker"
+          },
+          "initial": true
+        }
+      ]
+    },
+    {
+      "type": "minecraft:text",
+      "key": "playername",
+      "width": 256,
+      "label": {
+        "translate": "option.keepinv.restore_inv.playername_input"
+      },
+      "initial": "",
+      "max_length": 16
+    }
+  ],
+  "can_close_with_escape": true,
+  "external_title": {
+    "translate": "menu.keepinv.config.restore_inv.title"
+  },
+  "title": {
+    "translate": "menu.keepinv.config.restore_inv.title"
+  },
+  "pause": false,
+  "yes": {
+    "label": {
+      "translate": "option.keepinv.confirm"
+    },
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "function keepinv:restore_inv/init {playername:$(playername),item_type:$(item_type),inventory_type:$(inventory_type)}"
+    }
+  },
+  "no": {
+    "label": {
+      "translate": "option.keepinv.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "keepinv:config/main"
+    }
+  }
+}

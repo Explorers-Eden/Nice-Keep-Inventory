@@ -1,8 +1,3 @@
-loot spawn ~ ~ ~ loot {"type":"minecraft:entity","pools":[{"rolls": 1,"entries":[{"type": "minecraft:item","name": "minecraft:player_head","functions":[{"function": "minecraft:fill_player_head","entity": "this"}]}]}]}
-data modify storage eden:temp keepinv.name set from entity @n[type=item,nbt={Item:{id:"minecraft:player_head"}},distance=..1] Item.components.minecraft:profile.name
-data modify storage eden:temp keepinv.profile set from entity @n[type=item,nbt={Item:{id:"minecraft:player_head"}},distance=..1] Item.components.minecraft:profile
-kill @n[type=item,nbt={Item:{id:"minecraft:player_head"}},distance=..1]
-
 data modify storage eden:temp keepinv.UUID set from entity @s UUID
 
 execute store result storage eden:temp keepinv.rotation float 1.0 run random value -180..90
@@ -27,4 +22,4 @@ execute if data storage eden:settings keepinv{grave_type:"bundle"} run data modi
 execute if data storage eden:settings keepinv{grave_type:"chest"} run data modify storage eden:temp keepinv.profile set value {properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2MxYjJmNTkyY2ZjOGQzNzJkY2Y1ZmQ0NGVlZDY5ZGRkYzY0NjAxZDc4NDZkNzI2MTlmNzA1MTFkODA0M2E4OSJ9fX0="}]}
 execute if data storage eden:settings keepinv{grave_type:"tombstone"} run data modify storage eden:temp keepinv.profile set value {properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2YzYmU2NDAxNjczNmJlNDRiMWQ1YTVmM2FkYWI2ZDRjMDQzNzgyYzE3ZGQyOWMzYjhjNGNiNmU3M2Y5ODk4In19fQ=="}]}
 
-function keepinv:grave/place with storage eden:temp keepinv
+$execute in $(dimension) positioned $(pos_x) $(pos_y) $(pos_z) run function keepinv:grave/place with storage eden:temp keepinv

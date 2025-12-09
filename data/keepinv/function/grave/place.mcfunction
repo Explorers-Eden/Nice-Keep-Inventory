@@ -30,8 +30,9 @@ execute positioned ~ ~ ~ \
             run return run execute positioned ~-.5 ~ ~ run \
                 function keepinv:grave/place with storage eden:temp keepinv
 
-playsound minecraft:ui.hud.bubble_pop block @a ~ ~ ~ 0.75 0.3
-particle minecraft:poof ~ ~.25 ~ .1 .1 .1 0 15   
+playsound minecraft:particle.soul_escape block @a ~ ~ ~ 1 0.5
+particle minecraft:poof ~ ~.25 ~ .1 .1 .1 0 15
+particle minecraft:soul ~ ~.75 ~ .4 .4 .4 0.01 5
 
 $execute align xyz positioned ~.5 ~ ~.5 \
     run summon interaction ~ ~ ~ {\
@@ -89,3 +90,27 @@ $execute align xyz positioned ~.5 ~ ~.5 \
 
 $execute positioned ~ ~ ~ \
     run scoreboard players set @n[type=minecraft:interaction,tag=keepinv.grave.interaction,distance=..1] keepinv.grave.duration $(duration)
+
+$data modify storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.removed set value false
+$data modify storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.opened_by set value {}
+$execute positioned ~ ~ ~ \
+    run data modify storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.uuid \
+        set from entity @n[type=minecraft:interaction,tag=keepinv.grave.interaction,distance=..1] UUID
+
+$execute positioned ~ ~ ~ \
+    store result storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.x int 1 \
+        run data get entity @n[type=minecraft:interaction,tag=keepinv.grave.interaction,distance=..1] Pos[0]
+
+$execute positioned ~ ~ ~ \
+    store result storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.y int 1 \
+        run data get entity @n[type=minecraft:interaction,tag=keepinv.grave.interaction,distance=..1] Pos[1]
+
+$execute positioned ~ ~ ~ \
+    store result storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.z int 1 \
+        run data get entity @n[type=minecraft:interaction,tag=keepinv.grave.interaction,distance=..1] Pos[2]
+
+$data modify storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.dimension \
+    set from storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_safe_pos.dimension
+
+$data modify storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.contents \
+    set from storage eden:temp keepinv.dropped_items

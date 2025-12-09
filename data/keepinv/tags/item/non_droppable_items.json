@@ -147,6 +147,17 @@
       { "id": "minecraft:copper_axe","required": false},
       { "id": "minecraft:copper_pickaxe","required": false},
       { "id": "minecraft:copper_shovel","required": false},
-      { "id": "minecraft:copper_horse_armor","required": false}
+      { "id": "minecraft:copper_horse_armor","required": false},
+      { "id": "minecraft:netherite_horse_armor","required": false},
+      { "id": "minecraft:diamond_nautilus_armor","required": false},
+      { "id": "minecraft:golden_nautilus_armor","required": false},
+      { "id": "minecraft:iron_nautilus_armor","required": false},
+      { "id": "minecraft:copper_nautilus_armor","required": false},
+      { "id": "minecraft:netherite_nautilus_armor","required": false},
+      { "id": "#minecraft:spears","required": false},
+      { "id": "minecraft:parched_spawn_egg","required": false},
+      { "id": "minecraft:camel_husk_spawn_egg","required": false},
+      { "id": "minecraft:nautilus_spawn_egg","required": false},
+      { "id": "minecraft:zombie_nautilus_spawn_egg","required": false}
     ]
   }

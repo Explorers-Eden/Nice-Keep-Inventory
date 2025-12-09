@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:multi_action",
+  "can_close_with_escape": true,
+  "external_title": {
+    "translate": "menu.keepinv.config.main.title.ext"
+  },
+  "title": {
+    "translate": "menu.keepinv.config.main.title"
+  },
+  "pause": false,
+  "exit_action": {
+    "label": {
+      "translate": "mco.selectServer.close"
+    }
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": {
+        "translate": "option.keepinv.config"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "function keepinv:dialog/dynamic/config with storage eden:settings keepinv"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.keepinv.restore_inv"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "keepinv:config/restore_inv"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.keepinv.restore",
+        "color": "gray"
+      },
+      "action": {
+        "type": "show_dialog",
+        "dialog": "keepinv:config/restore_default"
+      }
+    }
+  ]
+}

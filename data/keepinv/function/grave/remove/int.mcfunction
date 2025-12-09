@@ -5,4 +5,4 @@ scoreboard players add @e[type=minecraft:interaction,tag=keepinv.grave.interacti
 execute \
     as @e[type=minecraft:interaction,tag=keepinv.grave.interaction] at @s \
     if score @s keepinv.grave.timer >= @s keepinv.grave.duration \
-        run function keepinv:grave/remove/exec
+        run function keepinv:grave/remove/get_data

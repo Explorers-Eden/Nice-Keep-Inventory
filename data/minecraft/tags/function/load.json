@@ -1,6 +1,7 @@
 {
     "values":[
       "keepinv:load",
-      "keepinv:grave/remove/int"
+      "keepinv:grave/remove/int",
+      "keepinv:save_pos/init"
     ]
   }
