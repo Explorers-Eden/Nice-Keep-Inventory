@@ -1,6 +1,7 @@
 
 $data modify storage eden:settings keepinv merge value {\
     exp_loss:'$(exp_loss)',\
+    grave_duration: $(grave_duration),\
     player_head_drop:'$(player_head_drop)',\
     non_droppable_tag_list:'$(non_droppable_tag_list)',\
     grave_status:'$(grave_status)',\

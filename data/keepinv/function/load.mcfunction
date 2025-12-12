@@ -15,4 +15,4 @@ gamerule keep_inventory true
 execute store result score $grave_duration keepinv.grave.duration run data get storage eden:settings keepinv.grave_duration 60
 
 ##set data pack version
-data modify storage eden:datapack nice_keep_inventory.version set value "2.6"
+data modify storage eden:datapack nice_keep_inventory.version set value "2.6.1"
