@@ -1,0 +1,12 @@
+{
+    "values": [
+      { "id": "goml:goggles","required": false},
+      { "id": "goml:crystal_claim_anchor","required": false},
+      { "id": "goml:emeradic_claim_anchor","required": false},
+      { "id": "goml:glistening_claim_anchor","required": false},
+      { "id": "goml:makeshift_claim_anchor","required": false},
+      { "id": "goml:reinforced_claim_anchor","required": false},
+      { "id": "goml:withered_claim_anchor","required": false},
+      { "id": "goml:admin_claim_anchor","required": false}
+    ]
+  }

@@ -1,0 +1,8 @@
+{
+    "values": [
+      { "id": "polyfactory:wrench","required": false},
+      { "id": "polyfactory:creative_container","required": false},
+      { "id": "polyfactory:creative_motor","required": false},
+      { "id": "polyfactory:creative_drain","required": false}
+    ]
+  }

@@ -1,0 +1,17 @@
+{
+    "values": [
+      { "id": "minecraft:command_block","required": false},
+      { "id": "minecraft:test_block","required": false},
+      { "id": "minecraft:test_instance_block","required": false},
+      { "id": "minecraft:command_block_minecart","required": false},
+      { "id": "minecraft:chain_command_block","required": false},
+      { "id": "minecraft:repeating_command_block","required": false},
+      { "id": "minecraft:structure_block","required": false},
+      { "id": "minecraft:jigsaw","required": false},
+      { "id": "minecraft:structure_void","required": false},
+      { "id": "minecraft:barrier","required": false},
+      { "id": "minecraft:debug_stick","required": false},
+      { "id": "minecraft:light","required": false},
+      { "id": "universal_shops:admin_trade_block","required": false}
+    ]
+  }
