@@ -1,10 +1,10 @@
 {
     "enchantment.keepinv.safekeep": "Safekeep",
-    "enchantment_lore.keepinv:safekeep.description": "§nSafekeep§r\n\nMax Level: I\n\nCompatible with: Armor\n\nKeep all items on death at the cost of 33% item durability",
+    "enchantment_lore.keepinv:safekeep.description": "Compatible with: Armor\n\nKeep all items on death at the cost of 33% item durability",
     "enchantment.keepinv.deathlock": "Deathlock",
-    "enchantment_lore.keepinv:deathlock.description": "§nDeathlock§r\n\nMax Level: I\n\nCompatible with: Chestplates\n\nItems lost/Graves created on death can only be obtained by one self",
+    "enchantment_lore.keepinv:deathlock.description": "Compatible with: Chestplates\n\nItems lost/Graves created on death can only be obtained by one self",
     "enchantment.keepinv.gravehold": "Gravehold",
-    "enchantment_lore.keepinv:gravehold.description": "§nGravehold§r\n\nMax Level: I\n\nCompatible with: Chestplates\n\nItems/Graves dropped on death will stay there for double the time before they disappear",
+    "enchantment_lore.keepinv:gravehold.description": "Compatible with: Chestplates\n\nItems/Graves dropped on death will stay there for double the time before they disappear",
     "text.keepinv.grave.prefix": "R.I.P.",
     "text.keepinv.no_saved_inventory": "No inventory saved for this player.",
     "menu.keepinv.title": "Nice Keep Inventory: Settings",

@@ -88,26 +88,21 @@ $execute align xyz positioned ~.5 ~ ~.5 \
         ]\
     }
 
-$execute positioned ~ ~ ~ \
-    run scoreboard players set @n[type=minecraft:interaction,tag=keepinv.grave.interaction,distance=..1] keepinv.grave.duration $(duration)
+$scoreboard players set @n[type=minecraft:interaction,tag=keepinv.grave.interaction,distance=..6] keepinv.grave.duration $(duration)
 
 $data modify storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.removed set value false
 $data modify storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.opened_by set value {}
-$execute positioned ~ ~ ~ \
-    run data modify storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.uuid \
-        set from entity @n[type=minecraft:interaction,tag=keepinv.grave.interaction,distance=..1] UUID
+$data modify storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.uuid \
+        set from entity @n[type=minecraft:interaction,tag=keepinv.grave.interaction,distance=..6] UUID
 
-$execute positioned ~ ~ ~ \
-    store result storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.x int 1 \
-        run data get entity @n[type=minecraft:interaction,tag=keepinv.grave.interaction,distance=..1] Pos[0]
+$execute store result storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.x int 1 \
+        run data get entity @n[type=minecraft:interaction,tag=keepinv.grave.interaction,distance=..6] Pos[0]
 
-$execute positioned ~ ~ ~ \
-    store result storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.y int 1 \
-        run data get entity @n[type=minecraft:interaction,tag=keepinv.grave.interaction,distance=..1] Pos[1]
+$execute store result storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.y int 1 \
+        run data get entity @n[type=minecraft:interaction,tag=keepinv.grave.interaction,distance=..6] Pos[1]
 
-$execute positioned ~ ~ ~ \
-    store result storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.z int 1 \
-        run data get entity @n[type=minecraft:interaction,tag=keepinv.grave.interaction,distance=..1] Pos[2]
+$execute store result storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.z int 1 \
+        run data get entity @n[type=minecraft:interaction,tag=keepinv.grave.interaction,distance=..6] Pos[2]
 
 $data modify storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.dimension \
     set from storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_safe_pos.dimension

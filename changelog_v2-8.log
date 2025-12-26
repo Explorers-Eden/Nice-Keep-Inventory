@@ -3,3 +3,4 @@
 - Added basic Food Items to list of non-droppable items
 
 ## Fixes:
+- Potentially fixed a bug where last grave coordinates wheren't saved properly
