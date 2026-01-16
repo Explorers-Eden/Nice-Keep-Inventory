@@ -15,6 +15,7 @@ data modify storage eden:temp keepinv.name set from entity @n[type=item,nbt={Ite
 data modify storage eden:temp keepinv.profile set from entity @n[type=item,nbt={Item:{id:"minecraft:player_head"}},distance=..1] Item.components.minecraft:profile
 kill @n[type=item,nbt={Item:{id:"minecraft:player_head"}},distance=..1]
 
+execute if data storage eden:settings keepinv{equip_dmg:"enabled"} run function keepinv:has_died/damage_equipment with storage eden:settings keepinv
 function keepinv:droppable_items/store with storage eden:settings keepinv
 
 data modify storage eden:temp keepinv.uuid_0 set from entity @s UUID[0]

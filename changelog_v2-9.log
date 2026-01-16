@@ -1,0 +1,5 @@
+## Changes:
+- Worn Equipment is now damaged on death by default (10%)
+- Added option to config menu to toggle Equipment Damage and adjust amount of damage
+
+## Fixes:

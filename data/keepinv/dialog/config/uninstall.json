@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:confirmation",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "menu.keepinv.uninstall.description",
+        "color": "red"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "menu.keepinv.uninstall.description_2",
+        "color": "gray"
+      }
+    }
+  ],
+  "can_close_with_escape": true,
+  "external_title": {
+    "translate": "menu.keepinv.title.uninstall.external"
+  },
+  "title": {
+    "translate": "menu.keepinv.title.uninstall"
+  },
+  "pause": true,
+  "after_action": "close",
+  "yes": {
+    "label": {
+      "translate": "menu.keepinv.confirm"
+    },
+    "action": {
+      "type": "run_command",
+      "command": "function keepinv:uninstall"
+    }
+  },
+  "no": {
+    "label": {
+      "translate": "menu.keepinv.back"
+    },
+    "action": {
+      "type": "show_dialog",
+      "dialog": "keepinv:config/main"
+    }
+  }
+}

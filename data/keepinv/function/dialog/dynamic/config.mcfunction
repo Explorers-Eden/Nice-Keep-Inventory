@@ -130,7 +130,7 @@ $dialog show @s \
         "translate":"option.keepinv.player_head_drop_chance"\
       },\
         "label_format": "options.percent_value",\
-        "start":0,\
+        "start":1,\
         "end":100,\
         "step":1,\
         "initial":$(player_head_drop_chance_initial)\
@@ -168,10 +168,48 @@ $dialog show @s \
         "translate":"option.keepinv.exp_loss_amount"\
       },\
         "label_format": "options.percent_value",\
-        "start":0,\
+        "start":1,\
         "end":100,\
         "step":1,\
         "initial":$(exp_loss_amount_initial)\
+    },\
+    {\
+      "type":"minecraft:single_option",\
+      "key":"equip_dmg",\
+      "width": 256,\
+      "label":{\
+        "translate":"option.keepinv.equip_dmg"\
+      },\
+      "options":[\
+        {\
+          "id":"enabled",\
+          "display":{\
+            "translate":"option.keepinv.enabled",\
+            "color":"green"\
+          }\
+        },\
+        {\
+          "id":"disabled",\
+          "display":{\
+            "translate":"option.keepinv.disabled",\
+            "color":"red"\
+          },\
+          "initial":$(equip_dmg_initial)\
+        }\
+      ]\
+    },\
+    {\
+      "type":"minecraft:number_range",\
+      "key":"equip_dmg_amount",\
+      "width": 256,\
+      "label":{\
+        "translate":"option.keepinv.equip_dmg_amount"\
+      },\
+        "label_format": "options.percent_value",\
+        "start":1,\
+        "end":100,\
+        "step":1,\
+        "initial":$(equip_dmg_amount_initial)\
     },\
     {\
       "type": "minecraft:text",\
@@ -203,9 +241,13 @@ $dialog show @s \
       "template":"$(command_template)"\
     }\
   },\
-  "no":{\
-    "label":{\
-      "translate":"mco.selectServer.close"\
+  "no": {\
+    "label": {\
+      "translate": "option.keepinv.back"\
+    },\
+    "action": {\
+      "type": "minecraft:show_dialog",\
+      "dialog": "keepinv:config/main"\
     }\
   }\
 }

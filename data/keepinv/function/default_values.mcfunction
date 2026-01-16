@@ -20,5 +20,9 @@ data modify storage eden:settings keepinv merge value {\
     exp_loss_initial:"false",\
     exp_loss_amount:0.3,\
     exp_loss_amount_initial:30,\
-    command_template:"function keepinv:dialog/command_template/config {exp_loss_amount:$(exp_loss_amount),exp_loss:\'$(exp_loss)\',player_head_drop_chance:$(player_head_drop_chance),player_head_drop:\'$(player_head_drop)\',non_droppable_tag_list:\'$(non_droppable_tag_list)\',grave_status:\'$(grave_status)\',grave_duration:\'$(grave_duration)\',grave_type:\'$(grave_type)\'}"\
+    equip_dmg:"enabled",\
+    equip_dmg_initial:"false",\
+    equip_dmg_amount:0.1,\
+    equip_dmg_amount_initial:10,\
+    command_template:"function keepinv:dialog/command_template/config {equip_dmg:$(equip_dmg),equip_dmg_amount:$(equip_dmg_amount),exp_loss_amount:$(exp_loss_amount),exp_loss:\'$(exp_loss)\',player_head_drop_chance:$(player_head_drop_chance),player_head_drop:\'$(player_head_drop)\',non_droppable_tag_list:\'$(non_droppable_tag_list)\',grave_status:\'$(grave_status)\',grave_duration:\'$(grave_duration)\',grave_type:\'$(grave_type)\'}"\
 }

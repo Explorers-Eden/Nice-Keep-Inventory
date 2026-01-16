@@ -42,6 +42,16 @@
         "type": "show_dialog",
         "dialog": "keepinv:config/restore_default"
       }
+    },
+    {
+      "label": {
+        "translate": "menu.keepinv.title.uninstall",
+        "color": "gray"
+      },
+      "action": {
+        "type": "show_dialog",
+        "dialog": "keepinv:config/uninstall"
+      }
     }
   ]
 }

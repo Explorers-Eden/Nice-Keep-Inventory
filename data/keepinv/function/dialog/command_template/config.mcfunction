@@ -1,5 +1,6 @@
 
 $data modify storage eden:settings keepinv merge value {\
+    equip_dmg:'$(equip_dmg)',\
     exp_loss:'$(exp_loss)',\
     grave_duration: $(grave_duration),\
     player_head_drop:'$(player_head_drop)',\
@@ -8,6 +9,9 @@ $data modify storage eden:settings keepinv merge value {\
     grave_type:'$(grave_type)'\
 }
 
+$data modify storage eden:settings keepinv.equip_dmg_amount_initial set value $(equip_dmg_amount)
+execute store result storage eden:settings keepinv.equip_dmg_amount float 0.01 run data get storage eden:settings keepinv.equip_dmg_amount_initial
+
 $data modify storage eden:settings keepinv.exp_loss_amount_initial set value $(exp_loss_amount)
 execute store result storage eden:settings keepinv.exp_loss_amount float 0.01 run data get storage eden:settings keepinv.exp_loss_amount_initial
 
@@ -15,6 +19,9 @@ $data modify storage eden:settings keepinv.player_head_drop_chance_initial set v
 execute store result storage eden:settings keepinv.player_head_drop_chance float 0.01 run data get storage eden:settings keepinv.player_head_drop_chance_initial
 
 execute store result score $grave_duration keepinv.grave.duration run data get storage eden:settings keepinv.grave_duration 60
+
+execute if data storage eden:settings keepinv{equip_dmg:"enabled"} run data modify storage eden:settings keepinv.equip_dmg_initial set value "false"
+execute unless data storage eden:settings keepinv{equip_dmg:"enabled"} run data modify storage eden:settings keepinv.equip_dmg_initial set value "true"
 
 execute if data storage eden:settings keepinv{exp_loss:"enabled"} run data modify storage eden:settings keepinv.exp_loss_initial set value "false"
 execute unless data storage eden:settings keepinv{exp_loss:"enabled"} run data modify storage eden:settings keepinv.exp_loss_initial set value "true"
