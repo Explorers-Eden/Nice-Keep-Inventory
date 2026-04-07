@@ -94,3 +94,6 @@ execute if data storage eden:settings keepinv{grave_type:"player_head"} run data
     grave_type_tombstone_initial:"false",\
     grave_type_player_head_initial:"true"\
 }
+
+execute if data storage eden:settings keepinv{grave_duration:0} run \
+    tellraw @s [{"bold":false,"color":"#89CFF0","italic":false,"text":"▊ "},{"bold":false,"color":"white","italic":false,"text":"Setting the Grave Duration to 0 minutes will prevent graves from despawning automatically. Keep in mind that having a large number of graves loaded at once may lead to lag."}]

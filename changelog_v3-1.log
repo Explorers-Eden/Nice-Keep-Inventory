@@ -1,0 +1,5 @@
+## Changes:
+- Increased max duration for graves to 180 Minutes
+- Setting grave duration to 0 minutes will result in them not despawning by themselves
+
+## Fixes:

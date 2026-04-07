@@ -34,8 +34,8 @@ $dialog show @s \
       "label":{\
         "translate":"option.keepinv.grave_duration"\
       },\
-        "start":1,\
-        "end":60,\
+        "start":0,\
+        "end":180,\
         "step":1,\
         "initial":$(grave_duration)\
     },\
