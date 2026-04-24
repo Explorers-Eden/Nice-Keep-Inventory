@@ -112,6 +112,7 @@ jobs:
           slug = "nice-keep-inventory"
           description = "Nice Keep Inventory packaged as a universal data/resource mod."
           icon = "nice-keep-inventory_pack.png"
+          namespace = "keepinv"
           homepage = f"https://modrinth.com/datapack/{slug}"
           sources = f"https://github.com/Explorers-Eden/{slug}"
 
@@ -119,6 +120,19 @@ jobs:
           missing = [p for p in required if not os.path.exists(p)]
           if missing:
               raise FileNotFoundError(f"Missing required files/folders: {', '.join(missing)}")
+
+          # Copy and replace lang folder before packaging.
+          assets_lang = Path("assets") / namespace / "lang"
+          data_lang = Path("data") / namespace / "lang"
+
+          if assets_lang.exists():
+              if data_lang.exists():
+                  shutil.rmtree(data_lang)
+              data_lang.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copytree(assets_lang, data_lang)
+              print(f"Synced {assets_lang} -> {data_lang}")
+          else:
+              print(f"No {assets_lang} found, skipping lang sync")
 
           def add_pack_files(zf):
               for folder in ["assets", "data"]:
@@ -128,6 +142,7 @@ jobs:
                       for file in files:
                           full = os.path.join(root, file)
                           zf.write(full, os.path.relpath(full, "."))
+
               for file in ["LICENSE", "pack.mcmeta", "pack.png"]:
                   zf.write(file, file)
 
