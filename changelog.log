@@ -1,5 +1,5 @@
 # Minecraft Version(s): 26.1.x
 ## Changes:
-- Added server side support for Enchantment Lore Mod
+- Lang Files are now getting automatically synced with crowdin with new releases
 
 ## Fixes:
