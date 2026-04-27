@@ -62,6 +62,8 @@ jobs:
           upload_translations: false
           download_translations: true
           skip_untranslated_files: false
+          push_translations: false
+          create_pull_request: false
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
@@ -71,6 +73,7 @@ jobs:
         run: |
           rm -f .crowdin-temp.yml
           rm -f assets/keepinv/lang/en_US.json
+          rm -f assets/keepinv/lang/en_MY.json
           cp "$RUNNER_TEMP/crowdin-backup/en_us.json" assets/keepinv/lang/en_us.json
 
       - name: Normalize lang filenames
