@@ -212,6 +212,37 @@ $dialog show @s \
         "initial":$(equip_dmg_amount_initial)\
     },\
     {\
+      "type":"minecraft:single_option",\
+      "key":"keepinv_type",\
+      "width": 256,\
+      "label":{\
+        "translate":"option.keepinv.keepinv_type"\
+      },\
+      "options":[\
+        {\
+          "id":"hotbar",\
+          "display":{\
+            "translate":"option.keepinv.keepinv_type.hotbar"\
+          },\
+          "initial":$(keepinv_type_hotbar_initial)\
+        },\
+        {\
+          "id":"none",\
+          "display":{\
+            "translate":"option.keepinv.keepinv_type.none"\
+          },\
+          "initial":$(keepinv_type_none_initial)\
+        },\
+        {\
+          "id":"taglist",\
+          "display":{\
+            "translate":"option.keepinv.keepinv_type.taglist"\
+          },\
+          "initial":$(keepinv_type_taglist_initial)\
+        }\
+      ]\
+    },\
+    {\
       "type": "minecraft:text",\
       "key": "non_droppable_tag_list",\
       "width": 256,\

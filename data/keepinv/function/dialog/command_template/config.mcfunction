@@ -1,5 +1,6 @@
 
 $data modify storage eden:settings keepinv merge value {\
+    keepinv_type:'$(keepinv_type)',\
     equip_dmg:'$(equip_dmg)',\
     exp_loss:'$(exp_loss)',\
     grave_duration: $(grave_duration),\
@@ -19,6 +20,18 @@ $data modify storage eden:settings keepinv.player_head_drop_chance_initial set v
 execute store result storage eden:settings keepinv.player_head_drop_chance float 0.01 run data get storage eden:settings keepinv.player_head_drop_chance_initial
 
 execute store result score $grave_duration keepinv.grave.duration run data get storage eden:settings keepinv.grave_duration 60
+
+execute if data storage eden:settings keepinv{keepinv_type:"taglist"} run data modify storage eden:settings keepinv.keepinv_type_taglist_initial set value "true"
+execute if data storage eden:settings keepinv{keepinv_type:"taglist"} run data modify storage eden:settings keepinv.keepinv_type_hotbar_initial set value "false"
+execute if data storage eden:settings keepinv{keepinv_type:"taglist"} run data modify storage eden:settings keepinv.keepinv_type_none_initial set value "false"
+
+execute if data storage eden:settings keepinv{keepinv_type:"hotbar"} run data modify storage eden:settings keepinv.keepinv_type_taglist_initial set value "false"
+execute if data storage eden:settings keepinv{keepinv_type:"hotbar"} run data modify storage eden:settings keepinv.keepinv_type_hotbar_initial set value "true"
+execute if data storage eden:settings keepinv{keepinv_type:"hotbar"} run data modify storage eden:settings keepinv.keepinv_type_none_initial set value "false"
+
+execute if data storage eden:settings keepinv{keepinv_type:"none"} run data modify storage eden:settings keepinv.keepinv_type_taglist_initial set value "false"
+execute if data storage eden:settings keepinv{keepinv_type:"none"} run data modify storage eden:settings keepinv.keepinv_type_hotbar_initial set value "false"
+execute if data storage eden:settings keepinv{keepinv_type:"none"} run data modify storage eden:settings keepinv.keepinv_type_none_initial set value "true"
 
 execute if data storage eden:settings keepinv{equip_dmg:"enabled"} run data modify storage eden:settings keepinv.equip_dmg_initial set value "false"
 execute unless data storage eden:settings keepinv{equip_dmg:"enabled"} run data modify storage eden:settings keepinv.equip_dmg_initial set value "true"

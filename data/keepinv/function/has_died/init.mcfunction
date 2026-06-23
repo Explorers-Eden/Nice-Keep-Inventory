@@ -16,7 +16,10 @@ data modify storage eden:temp keepinv.profile set from entity @n[type=item,nbt={
 kill @n[type=item,nbt={Item:{id:"minecraft:player_head"}},distance=..1]
 
 execute if data storage eden:settings keepinv{equip_dmg:"enabled"} run function keepinv:has_died/damage_equipment with storage eden:settings keepinv
-function keepinv:droppable_items/store with storage eden:settings keepinv
+
+execute if data storage eden:settings keepinv{keepinv_type:"taglist"} run function keepinv:droppable_items/taglist/store with storage eden:settings keepinv
+execute if data storage eden:settings keepinv{keepinv_type:"hotbar"} run function keepinv:droppable_items/hotbar/store
+execute if data storage eden:settings keepinv{keepinv_type:"none"} run function keepinv:droppable_items/none/store
 
 data modify storage eden:temp keepinv.uuid_0 set from entity @s UUID[0]
 data modify storage eden:temp keepinv.uuid_1 set from entity @s UUID[1]
@@ -26,7 +29,9 @@ data modify storage eden:temp keepinv.uuid_3 set from entity @s UUID[3]
 function keepinv:has_died/backup_player_data with storage eden:temp keepinv
 execute if items entity @s armor.* #minecraft:enchantable/armor[minecraft:enchantments~[{enchantments: "keepinv:safekeep"}]] run return run function keepinv:safekeep
 
-function keepinv:droppable_items/clear with storage eden:settings keepinv
+execute if data storage eden:settings keepinv{keepinv_type:"taglist"} run function keepinv:droppable_items/taglist/clear with storage eden:settings keepinv
+execute if data storage eden:settings keepinv{keepinv_type:"hotbar"} run function keepinv:droppable_items/hotbar/clear with storage eden:settings keepinv
+execute if data storage eden:settings keepinv{keepinv_type:"none"} run clear @s
 
 execute unless data storage eden:temp keepinv.dropped_items[0] run return fail
 execute if data storage eden:settings keepinv{grave_status:"enabled"} run return run function keepinv:has_died/get_pos with storage eden:temp keepinv

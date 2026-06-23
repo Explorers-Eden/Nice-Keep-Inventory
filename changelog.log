@@ -1,5 +1,5 @@
-# Minecraft Version(s): 26.1.x
+# Minecraft Version(s): 26.2
 ## Changes:
-- Lang Files are now getting automatically synced with crowdin with new releases
+- Added config option to choose whether Hotbar + Equipment Slots, Tag List Items or No Items are being kept when dying (Default: Tag List)
 
 ## Fixes:
