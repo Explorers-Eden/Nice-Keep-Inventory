@@ -3,7 +3,7 @@ data remove storage eden:temp keepinv
 
 ##apply default values on first load
 execute unless data storage eden:settings keepinv run function keepinv:default_values
-execute unless data storage eden:datapack nice_keep_inventory{version:3.4} run data modify storage eden:settings keepinv merge value {\
+execute unless data storage eden:datapack nice_keep_inventory{version:3.5} run data modify storage eden:settings keepinv merge value {\
     keepinv_type:"taglist",\
     keepinv_type_taglist_initial:"true",\
     keepinv_type_none_initial:"false",\
@@ -22,4 +22,4 @@ gamerule keep_inventory true
 execute store result score $grave_duration keepinv.grave.duration run data get storage eden:settings keepinv.grave_duration 60
 
 ##set data pack version
-data modify storage eden:datapack nice_keep_inventory.version set value "3.4"
+data modify storage eden:datapack nice_keep_inventory.version set value "3.5"

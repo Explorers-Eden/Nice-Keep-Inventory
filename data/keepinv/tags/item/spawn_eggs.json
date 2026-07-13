@@ -85,6 +85,7 @@
     "minecraft:zombie_nautilus_spawn_egg",
     "minecraft:zombie_spawn_egg",
     "minecraft:zombie_villager_spawn_egg",
-    "minecraft:zombified_piglin_spawn_egg"
+    "minecraft:zombified_piglin_spawn_egg",
+    "minecraft:sulfur_cube_spawn_egg"
   ]
 }

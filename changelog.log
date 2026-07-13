@@ -1,5 +1,5 @@
 # Minecraft Version(s): 26.2
 ## Changes:
-- Added config option to choose whether Hotbar + Equipment Slots, Tag List Items or No Items are being kept when dying (Default: Tag List)
+- Added Sulfur Cube Spawn Egg to default list of non droppable items
 
 ## Fixes:
