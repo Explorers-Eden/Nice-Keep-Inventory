@@ -1,7 +1,7 @@
 {
-    "values": [
-      { "id": "polydecorations:trowel","required": false},
-      { "id": "polydecorations:hammer","required": false},
-      { "id": "polydecorations:canvas","required": false}
-    ]
-  }
+  "values": [
+    { "id": "polydecorations:canvas", "required": false },
+    { "id": "polydecorations:hammer", "required": false },
+    { "id": "polydecorations:trowel", "required": false }
+  ]
+}

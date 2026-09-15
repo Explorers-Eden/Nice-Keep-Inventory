@@ -1,0 +1,25 @@
+{
+  "parent": "eden:adventure/nice_keep_inventory",
+  "display": {
+    "icon": {
+      "id": "minecraft:player_head"
+    },
+    "title": {
+      "translate": "advancement.eden.adventure.nice_keep_inventory.grave_robber.title",
+      "fallback": "Grave Robber"
+    },
+    "description": {
+      "translate": "advancement.eden.adventure.nice_keep_inventory.grave_robber.description",
+      "fallback": "Retrieve items from your own grave."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "recovered_own_grave": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

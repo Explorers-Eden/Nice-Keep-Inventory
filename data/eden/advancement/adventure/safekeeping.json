@@ -1,0 +1,38 @@
+{
+  "parent": "eden:adventure/nice_keep_inventory",
+  "display": {
+    "icon": {
+      "id": "minecraft:shield"
+    },
+    "title": {
+      "translate": "advancement.eden.adventure.nice_keep_inventory.safekeeping.title",
+      "fallback": "Safekeeping"
+    },
+    "description": {
+      "translate": "advancement.eden.adventure.nice_keep_inventory.safekeeping.description",
+      "fallback": "Enchant an armor piece with Safekeep."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "has_safekeep": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#minecraft:enchantable/armor",
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "keepinv:safekeep"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

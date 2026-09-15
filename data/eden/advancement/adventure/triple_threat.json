@@ -1,0 +1,72 @@
+{
+  "parent": "eden:adventure/nice_keep_inventory",
+  "display": {
+    "icon": {
+      "id": "minecraft:totem_of_undying"
+    },
+    "title": {
+      "translate": "advancement.eden.adventure.nice_keep_inventory.triple_threat.title",
+      "fallback": "Triple Threat"
+    },
+    "description": {
+      "translate": "advancement.eden.adventure.nice_keep_inventory.triple_threat.description",
+      "fallback": "Obtain each of the three death enchantments at least once."
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "has_safekeep": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#minecraft:enchantable/armor",
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "keepinv:safekeep"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "has_deathlock": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#minecraft:chest_armor",
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "keepinv:deathlock"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "has_gravehold": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#minecraft:chest_armor",
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "keepinv:gravehold"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

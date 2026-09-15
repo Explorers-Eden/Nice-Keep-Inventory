@@ -1,0 +1,125 @@
+{
+  "parent": "eden:adventure/safekeeping",
+  "display": {
+    "icon": {
+      "id": "minecraft:anvil"
+    },
+    "title": {
+      "translate": "advancement.eden.adventure.nice_keep_inventory.paying_the_toll.title",
+      "fallback": "Paying the Toll"
+    },
+    "description": {
+      "translate": "advancement.eden.adventure.nice_keep_inventory.paying_the_toll.description",
+      "fallback": "Die with Safekeep active and keep all your items."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "died_head": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:player",
+            "nbt": "{Health:0f}",
+            "equipment": {
+              "head": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantments": "keepinv:safekeep"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "died_chest": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:player",
+            "nbt": "{Health:0f}",
+            "equipment": {
+              "chest": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantments": "keepinv:safekeep"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "died_legs": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:player",
+            "nbt": "{Health:0f}",
+            "equipment": {
+              "legs": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantments": "keepinv:safekeep"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "died_feet": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:player",
+            "nbt": "{Health:0f}",
+            "equipment": {
+              "feet": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantments": "keepinv:safekeep"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "died_head",
+      "died_chest",
+      "died_legs",
+      "died_feet"
+    ]
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "parent": "eden:adventure/grave_robber",
+  "display": {
+    "icon": {
+      "id": "minecraft:chest"
+    },
+    "title": {
+      "translate": "advancement.eden.adventure.nice_keep_inventory.six_feet_under_briefly.title",
+      "fallback": "Six Feet Under, Briefly"
+    },
+    "description": {
+      "translate": "advancement.eden.adventure.nice_keep_inventory.six_feet_under_briefly.description",
+      "fallback": "Recover your own grave after dying with Deathlock active."
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "died_with_deathlock": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:player",
+            "nbt": "{Health:0f}",
+            "equipment": {
+              "chest": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantments": "keepinv:deathlock"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "recovered_own_grave": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

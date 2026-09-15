@@ -2,6 +2,8 @@ $execute \
     if data entity @s data.grave{deathlock:true} \
         run execute unless data entity @s data.grave{uuid:$(uuid)} run return fail
 
+$execute if data entity @s data.grave{uuid:$(uuid)} run data modify storage eden:temp keepinv.grave.is_owner set value true
+
 data modify storage eden:temp keepinv.grave.dropped_items set from entity @s data.grave.items
 data modify storage eden:temp keepinv.grave.current_item set from entity @s data.grave.items[0]
 data modify storage eden:temp keepinv.grave.grave_uuid set from entity @s UUID
