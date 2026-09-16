@@ -57,5 +57,21 @@
     "option.keepinv.equip_dmg_amount": "Equipment Damage Amount",
     "option.keepinv.config": "Configurações",
     "option.keepinv.restore_inv": "Restaurar Inventário do Jogador",
-    "option.keepinv.restore": "Restaurar Configurações Padrão"
+    "option.keepinv.restore": "Restaurar Configurações Padrão",
+    "advancement.eden.adventure.nice_keep_inventory.chapter.description": "Die for the first time.",
+    "advancement.eden.adventure.nice_keep_inventory.chapter.title": "Rest in Pieces",
+    "advancement.eden.adventure.nice_keep_inventory.grave_robber.description": "Retrieve items from your own grave.",
+    "advancement.eden.adventure.nice_keep_inventory.grave_robber.title": "Grave Robber",
+    "advancement.eden.adventure.nice_keep_inventory.paying_the_toll.description": "Die with Safekeep active and keep all your items.",
+    "advancement.eden.adventure.nice_keep_inventory.paying_the_toll.title": "Paying the Toll",
+    "advancement.eden.adventure.nice_keep_inventory.safekeeping.description": "Enchant an armor piece with Safekeep.",
+    "advancement.eden.adventure.nice_keep_inventory.safekeeping.title": "Safekeeping",
+    "advancement.eden.adventure.nice_keep_inventory.six_feet_under_briefly.description": "Recover your own grave after dying with Deathlock active.",
+    "advancement.eden.adventure.nice_keep_inventory.six_feet_under_briefly.title": "Six Feet Under, Briefly",
+    "advancement.eden.adventure.nice_keep_inventory.triple_threat.description": "Obtain each of the three death enchantments at least once.",
+    "advancement.eden.adventure.nice_keep_inventory.triple_threat.title": "Triple Threat",
+    "advancement.eden.adventure.root.description": "Begin your journey through the packs of Explorer's Eden.",
+    "advancement.eden.adventure.root.title": "Explorer's Eden",
+    "menu.keepinv.back": "Back",
+    "menu.keepinv.confirm": "Confirm"
 }
