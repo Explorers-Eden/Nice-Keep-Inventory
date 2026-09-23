@@ -3,7 +3,7 @@ $execute \
     unless data storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).death_inventory.filtered \
         run return run tellraw @s [\
             {"text":"▊ ","color":"#FF4A4A","bold":false,"italic":false},\
-            {"bold":false,"color":"white","italic":false,"translate":"text.keepinv.no_saved_inventory"}\
+            {"bold":false,"color":"white","fallback":"No inventory saved for this player.","italic":false,"translate":"text.keepinv.no_saved_inventory"}\
         ]
 
 $execute \
@@ -11,7 +11,7 @@ $execute \
     unless data storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).death_inventory.raw \
         run return run tellraw @s [\
             {"text":"▊ ","color":"#FF4A4A","bold":false,"italic":false},\
-            {"bold":false,"color":"white","italic":false,"translate":"text.keepinv.no_saved_inventory"}\
+            {"bold":false,"color":"white","fallback":"No inventory saved for this player.","italic":false,"translate":"text.keepinv.no_saved_inventory"}\
         ]
 
 $execute \

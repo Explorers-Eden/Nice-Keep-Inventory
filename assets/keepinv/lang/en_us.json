@@ -38,6 +38,7 @@
     "option.keepinv.restore_inv.playername_input": "Enter Playername Below:",
     "option.keepinv.back": "Back",
     "option.keepinv.confirm": "Confirm",
+    "option.keepinv.close": "Close",
     "option.keepinv.enabled": "Enabled",
     "option.keepinv.disabled": "Disabled",
     "option.keepinv.grave_status": "Graves",
