@@ -73,5 +73,6 @@
     "advancement.eden.adventure.root.description": "Begin your journey through the packs of Explorer's Eden.",
     "advancement.eden.adventure.root.title": "Explorer's Eden",
     "menu.keepinv.back": "Back",
-    "menu.keepinv.confirm": "Confirm"
+    "menu.keepinv.confirm": "Confirm",
+    "option.keepinv.close": "Close"
 }
