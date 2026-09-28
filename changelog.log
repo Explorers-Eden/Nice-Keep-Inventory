@@ -1,10 +1,5 @@
 # Minecraft Version(s): 26.3
-## The Wilderness Bound update had lots of small technical changes which added up - so please report any Bugs you catch on our Discord server. 
-## We also moved away from crowdin for our translations and now have our own solution. Feel free to contribute: https://explorerseden.eu/translate/
-## Thank you!
-
 ## Changes:
-- Added Straw Beds to list of non-droppable items
-- Added 6 progression advancements
 
 ## Fixes:
+- "Couldn't set damage of loot item.." log message which was caused by equipment damage on death if the equipped item had no durability

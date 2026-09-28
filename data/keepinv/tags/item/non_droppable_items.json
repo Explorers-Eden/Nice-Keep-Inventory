@@ -33,6 +33,7 @@
     { "id": "minecraft:goat_horn", "required": false },
     { "id": "minecraft:mace", "required": false },
     { "id": "minecraft:music_disc_5", "required": false },
+    { "id": "minecraft:music_disc_13", "required": false },
     { "id": "minecraft:recovery_compass", "required": false },
     { "id": "minecraft:shears", "required": false },
     { "id": "minecraft:shield", "required": false },
