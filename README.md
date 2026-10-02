@@ -36,7 +36,7 @@ With **v2.5** forward the data pack also comes with customizable Player Graves a
 For **PaperMC users**, it is recommended to set the `paper.maxChatCommandInputSize` property to a value between 512 and 1024. More information can be found in the [PaperMC Docs](https://docs.papermc.io/paper/reference/system-properties/#papermaxchatcommandinputsize).
 
 ## 📝 Translations
-Want to play in your own language? You can help us out by contributing on our **[Crowdin Page](https://crowdin.com/project/explorers-eden)**! Once a translation for a language is finished, it’ll be added to the data pack for you to enjoy.
+Want to play in your own language? You can help us out by contributing on our **[Website]([https://crowdin.com/project/explorers-eden](https://explorerseden.eu/translate/))**!
 
 ## ✍️ Feedback, Questions & Suggestions
 We're here to help! If you happen to have questions, suggestions or just encountered a bug, then feel free to hop on our discord server to ask for help in our **Data Pack Section**. [Click to join the server](https://discord.gg/f2pMggfgVv)
