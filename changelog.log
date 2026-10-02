@@ -2,4 +2,4 @@
 ## Changes:
 
 ## Fixes:
-- "Couldn't set damage of loot item.." log message which was caused by equipment damage on death if the equipped item had no durability
+- Safekeep enchantment not being obtainable (now available from Enchanting Tables, random loot and Villager trades like Deathlock and Gravehold)
