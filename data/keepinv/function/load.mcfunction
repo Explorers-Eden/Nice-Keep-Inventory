@@ -14,6 +14,10 @@ execute unless data storage eden:datapack nice_keep_inventory{version:3.5} run d
 ##add scoreboards
 scoreboard objectives add keepinv.grave.timer dummy
 scoreboard objectives add keepinv.grave.duration dummy
+scoreboard objectives add keepinv.uuid.0 dummy
+scoreboard objectives add keepinv.uuid.1 dummy
+scoreboard objectives add keepinv.uuid.2 dummy
+scoreboard objectives add keepinv.uuid.3 dummy
 
 ##set gamerules
 gamerule keep_inventory true
@@ -21,5 +25,8 @@ gamerule keep_inventory true
 ##set grave duration in case it got deleted
 execute store result score $grave_duration keepinv.grave.duration run data get storage eden:settings keepinv.grave_duration 60
 
+##start repeating loops
+function keepinv:start
+
 ##set data pack version
-data modify storage eden:datapack nice_keep_inventory.version set value "3.8"
+data modify storage eden:datapack nice_keep_inventory.version set value "3.9"

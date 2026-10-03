@@ -1,5 +1,6 @@
 # Minecraft Version(s): 26.3
 ## Changes:
+- Repeating background tasks now start a few ticks apart after loading instead of all on the same tick, spreading out server load
+- Improved server performance of saving the last safe position for graves (player data is read twice instead of eight times per check)
 
 ## Fixes:
-- Safekeep enchantment not being obtainable (now available from Enchanting Tables, random loot and Villager trades like Deathlock and Gravehold)
