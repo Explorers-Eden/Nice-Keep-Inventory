@@ -6,6 +6,9 @@ $execute if data storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_
 $execute if data storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave{uuid:$(grave_uuid)} run data modify storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.opened_by.name set from storage eden:temp keepinv.grave.name
 $execute if data storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave{uuid:$(grave_uuid)} run data modify storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.opened_by.uuid set from storage eden:temp keepinv.grave.uuid
 
+function keepinv:grave/tracker/remove with storage eden:temp keepinv.grave
+function keepinv:grave/notify/init
+
 execute on passengers run execute on passengers run kill @s
 execute on passengers run kill @s
 kill @s

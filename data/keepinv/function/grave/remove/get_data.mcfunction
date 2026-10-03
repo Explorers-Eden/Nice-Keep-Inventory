@@ -4,6 +4,8 @@ data modify storage eden:temp keepinv.grave.uuid_2 set from entity @s data.grave
 data modify storage eden:temp keepinv.grave.uuid_3 set from entity @s data.grave.uuid[3]
 
 data modify storage eden:temp keepinv.grave.name set value "expired"
+data modify storage eden:temp keepinv.grave.type set value "expired"
+data remove storage eden:temp keepinv.grave.is_owner
 data modify storage eden:temp keepinv.grave.uuid set value []
 
 data modify storage eden:temp keepinv.grave.grave_uuid set from entity @s UUID

@@ -4,6 +4,7 @@ $data modify storage eden:settings keepinv merge value {\
     equip_dmg:'$(equip_dmg)',\
     exp_loss:'$(exp_loss)',\
     grave_duration: $(grave_duration),\
+    grave_timer:'$(grave_timer)',\
     player_head_drop:'$(player_head_drop)',\
     non_droppable_tag_list:'$(non_droppable_tag_list)',\
     grave_status:'$(grave_status)',\
@@ -38,6 +39,9 @@ execute unless data storage eden:settings keepinv{equip_dmg:"enabled"} run data 
 
 execute if data storage eden:settings keepinv{exp_loss:"enabled"} run data modify storage eden:settings keepinv.exp_loss_initial set value "false"
 execute unless data storage eden:settings keepinv{exp_loss:"enabled"} run data modify storage eden:settings keepinv.exp_loss_initial set value "true"
+
+execute if data storage eden:settings keepinv{grave_timer:"world_time"} run data modify storage eden:settings keepinv.grave_timer_world_time_initial set value "true"
+execute unless data storage eden:settings keepinv{grave_timer:"world_time"} run data modify storage eden:settings keepinv.grave_timer_world_time_initial set value "false"
 
 execute if data storage eden:settings keepinv{grave_status:"enabled"} run data modify storage eden:settings keepinv.grave_status_initial set value "false"
 execute unless data storage eden:settings keepinv{grave_status:"enabled"} run data modify storage eden:settings keepinv.grave_status_initial set value "true"

@@ -1,0 +1,6 @@
+data modify storage eden:temp keepinv.dimension_name set value "Unknown"
+execute if dimension minecraft:overworld run data modify storage eden:temp keepinv.dimension_name set value "Overworld"
+execute if dimension minecraft:the_nether run data modify storage eden:temp keepinv.dimension_name set value "The Nether"
+execute if dimension minecraft:the_end run data modify storage eden:temp keepinv.dimension_name set value "The End"
+execute if dimension nice_actions:astral_plane run data modify storage eden:temp keepinv.dimension_name set value "Astral Plane"
+execute if dimension kattersstructures:deep_blue run data modify storage eden:temp keepinv.dimension_name set value "Deep Blue"

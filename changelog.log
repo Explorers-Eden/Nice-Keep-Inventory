@@ -1,6 +1,7 @@
 # Minecraft Version(s): 26.3
 ## Changes:
-- Repeating background tasks now start a few ticks apart after loading instead of all on the same tick, spreading out server load
-- Improved server performance of saving the last safe position for graves (player data is read twice instead of eight times per check)
+- New Grave Timer setting: graves can now count down in world time instead of only while players are nearby
+- Grave owners now get a message when someone else loots their grave or when it expires (delivered on the next join if they were offline)
+- With the World Time grave timer, graves now disappear right when their time runs out, even if nobody is near them, and owners get a warning a minute before
 
 ## Fixes:

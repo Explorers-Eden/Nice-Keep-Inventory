@@ -45,6 +45,32 @@ $dialog show @s \
     },\
     {\
       "type":"minecraft:single_option",\
+      "key":"grave_timer",\
+      "width": 256,\
+      "label":{\
+        "translate":"option.keepinv.grave_timer",\
+        "fallback":"Grave Timer"\
+      },\
+      "options":[\
+        {\
+          "id":"loaded",\
+          "display":{\
+            "translate":"option.keepinv.grave_timer.loaded",\
+            "fallback":"Only While Loaded"\
+          }\
+        },\
+        {\
+          "id":"world_time",\
+          "display":{\
+            "translate":"option.keepinv.grave_timer.world_time",\
+            "fallback":"World Time"\
+          },\
+          "initial":$(grave_timer_world_time_initial)\
+        }\
+      ]\
+    },\
+    {\
+      "type":"minecraft:single_option",\
       "key":"grave_type",\
       "width": 256,\
       "label":{\

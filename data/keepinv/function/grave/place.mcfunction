@@ -90,6 +90,9 @@ $execute align xyz positioned ~.5 ~ ~.5 \
 
 $scoreboard players set @n[type=minecraft:interaction,tag=keepinv.grave.interaction,distance=..6] keepinv.grave.duration $(duration)
 
+execute store result score @n[type=minecraft:interaction,tag=keepinv.grave.interaction,distance=..6] keepinv.grave.created run time query gametime
+scoreboard players operation @n[type=minecraft:interaction,tag=keepinv.grave.interaction,distance=..6] keepinv.grave.created /= $20 keepinv.grave.timer
+
 $data modify storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.removed set value false
 $data modify storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.opened_by set value {}
 $data modify storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.uuid \
@@ -109,3 +112,5 @@ $data modify storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).l
 
 $data modify storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).last_grave.contents \
     set from storage eden:temp keepinv.dropped_items
+
+execute as @n[type=minecraft:interaction,tag=keepinv.grave.interaction,distance=..6] run function keepinv:grave/tracker/add
