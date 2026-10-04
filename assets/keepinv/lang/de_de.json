@@ -104,5 +104,8 @@
     "advancement.eden.adventure.root.title": "Explorer's Eden",
     "menu.keepinv.back": "Back",
     "menu.keepinv.confirm": "Confirm",
-    "option.keepinv.close": "Close"
+    "option.keepinv.close": "Close",
+    "option.keepinv.grave_timer": "Grave Timer",
+    "option.keepinv.grave_timer.loaded": "Only While Loaded",
+    "option.keepinv.grave_timer.world_time": "World Time"
 }
