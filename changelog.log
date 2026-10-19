@@ -1,7 +1,5 @@
 # Minecraft Version(s): 26.3
 ## Changes:
-- New Grave Timer setting: graves can now count down in world time instead of only while players are nearby
-- Grave owners now get a message when someone else loots their grave or when it expires (delivered on the next join if they were offline)
-- With the World Time grave timer, graves now disappear right when their time runs out, even if nobody is near them, and owners get a warning a minute before
+- Saving the last safe position (every second per player) reads the position from a marker instead of the player's full data (which includes their whole inventory), much lighter on the server
 
 ## Fixes:
