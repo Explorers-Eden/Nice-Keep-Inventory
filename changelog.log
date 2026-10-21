@@ -1,5 +1,5 @@
 # Minecraft Version(s): 26.3
 ## Changes:
-- Saving the last safe position (every second per player) reads the position from a marker instead of the player's full data (which includes their whole inventory), much lighter on the server
 
 ## Fixes:
+- Dying on NeoForge servers no longer breaks: items were not kept or dropped correctly and no grave was created. Opening graves works again too

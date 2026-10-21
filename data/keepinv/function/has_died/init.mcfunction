@@ -10,7 +10,7 @@ execute \
 
 execute if data storage eden:settings keepinv{exp_loss:"enabled"} run function keepinv:exp_lost/start with storage eden:settings keepinv
 
-loot spawn ~ ~ ~ loot {"type": "minecraft:command","pools":[{"rolls": 1,"entries":[{"type": "minecraft:item","name": "minecraft:player_head","modifier":[{"type": "minecraft:fill_player_head","entity": "this"}]}]}]}
+loot spawn ~ ~ ~ loot keepinv:gameplay/player_head
 data modify storage eden:temp keepinv.name set from entity @n[type=item,nbt={Item:{id:"minecraft:player_head"}},distance=..1] Item.components.minecraft:profile.name
 data modify storage eden:temp keepinv.profile set from entity @n[type=item,nbt={Item:{id:"minecraft:player_head"}},distance=..1] Item.components.minecraft:profile
 kill @n[type=item,nbt={Item:{id:"minecraft:player_head"}},distance=..1]
